@@ -21,22 +21,15 @@ export const setStateToSuccess = (payload) => ({
   };
   
   export const addDataForm = (formData, history) => {
-    return async (dispatch) => {
-      await httpClient.post(server.PRODUCT_URL, formData);
-      history.goBack();
+    return  (dispatch) => {
+        try {
+            dispatch(setStateToSuccess(formData))
+            history.goBack();
+        }catch(error){
+            alert(JSON.stringify(error));
+            dispatch(setStateToFailed());
+        }
     };
   };
   
-  export const getProductById = (id) => {
-    return async (dispatch) => {
-      try {
-        dispatch(setStateToFetching());
-        let result = await httpClient.get(`${server.PRODUCT_URL}/${id}`);
-        dispatch(setStateToSuccess(result.data));
-      } catch (error) {
-        alert(JSON.stringify(error));
-        dispatch(setStateToFailed());
-      }
-    };
-  };
-  
+ 
