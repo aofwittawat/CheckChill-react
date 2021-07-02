@@ -14,7 +14,8 @@ import Buttonwrapper from './components/FormsUI/Button';
 import genderData from './components/data/gender.json'
 import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import Result from './../../views/Result/Result';
+import * as riskActions from './../../actions/risk.action';
+import { useDispatch } from "react-redux";
 
 const useStyles = makeStyles((theme) => ({
     formWrapper: {
@@ -71,9 +72,9 @@ const FORM_VALIDATION = Yup.object().shape({
 });
 
 
-const CheckboxRisk = () => {
+const CheckboxRisk = (props) => {
 
-    
+    const dispatch = useDispatch();
     const classes = useStyles();
     return (
         
@@ -86,10 +87,34 @@ const CheckboxRisk = () => {
                                 ...INITIAL_FORM_STATE
                             }}
                             validationSchema={FORM_VALIDATION}
-                            onSubmit={values => {
-                            
-                                console.log(values)
-                                
+                            onSubmit={(values, {setSubmitting}) => {
+                                let formData = new  FormData()
+                                formData.append("age",values.age)
+                                formData.append("weight",values.weight)
+                                formData.append("height",values.height)
+                                formData.append("gender",values.gender)
+                                formData.append("isSmoking",values.isSmoking)
+                                formData.append("isDrinking",values.isDrinking)
+                                formData.append("isVacineHepB",values.isVacineHepB)
+                                formData.append("isExposure",values.isExposure)
+                                formData.append("isRenalFailure",values.isRenalFailure)
+                                formData.append("isDM",values.isDM)
+                                formData.append("isHT",values.isHT)
+                                formData.append("isDLP",values.isDLP)
+                                formData.append("isHepatitis",values.isHepatitis)
+                                formData.append("isPancreaitis",values.isPancreaitis)
+                                formData.append("isColitis",values.isColitis)
+                                formData.append("isOsteoporosis",values.isOsteoporosis)
+                                formData.append("isAsthma",values.isAsthma)
+                                formData.append("isStone",values.isStone)
+                                formData.append("isMI",values.isMI)
+                                formData.append("isCAColon",values.isCAColon)
+                                formData.append("isCAProstate",values.isCAProstate)
+                                formData.append("isCALiver",values.isCALiver)
+                                formData.append("isCAPancreas",values.isCAPancreas)
+                                formData.append("isCAOthers",values.isCAOthers)
+                                dispatch(riskActions.addDataForm(formData, props.history))
+                                setSubmitting(false);
                             }}
                         >
                             <Form>
