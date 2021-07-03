@@ -55,8 +55,8 @@ const Reviews = props => {
   return (
     <div className={className} {...rest}>
       <SectionHeader
-        title={<div>ความประทับใจต่างๆ ที่ได้รับการรีวิวจากผู้ใช้จริง</div>}
-        subtitle={<div>คุณสามารถร่วมเป็นส่วนหนึ่ง ของการรีวิวได้ เพื่อการพัฒนาที่ดียิ่งขึ้น</div>}
+        title="ความประทับใจต่างๆ ที่ได้รับการรีวิวจากผู้ใช้จริง"
+        subtitle="คุณสามารถร่วมเป็นส่วนหนึ่ง ของการรีวิวได้ เพื่อการพัฒนาที่ดียิ่งขึ้น"
         align="center"
         data-aos="fade-up"
       />
@@ -78,7 +78,7 @@ const Reviews = props => {
                     <Avatar {...item.authorPhoto} />
                   </ListItemAvatar>
                   <ListItemText
-                    primary={<div>{item.authorName}</div>}
+                    primary={item.authorName}
                     secondary={item.authorOccupation}
                     primaryTypographyProps={{
                       variant: 'h6',

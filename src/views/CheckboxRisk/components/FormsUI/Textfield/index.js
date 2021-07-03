@@ -4,13 +4,13 @@ import { useField } from 'formik';
 
 const TextfieldWrapper = ({
   name,
-  ...otherProps
+  ...props
 }) => {
   const [field, mata] = useField(name);
 
   const configTextfield = {
     ...field,
-    ...otherProps,
+    ...props,
     fullWidth: true,
     variant: 'outlined'
   };

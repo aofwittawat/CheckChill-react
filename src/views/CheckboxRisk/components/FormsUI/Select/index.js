@@ -5,10 +5,10 @@ import { useField, useFormikContext } from 'formik';
 const SelectWrapper = ({
   name,
   options,
-  ...otherProps
+  ...props
 }) => {
-  const { setFieldValue } = useFormikContext();
-  const [field, meta] = useField(name);
+ const { setFieldValue } = useFormikContext();
+ const [field, meta] = useField(name);
 
   const handleChange = evt => {
     const { value } = evt.target;
@@ -17,7 +17,7 @@ const SelectWrapper = ({
 
   const configSelect = {
     ...field,
-    ...otherProps,
+    ...props,
     select: true,
     variant: 'outlined',
     fullWidth: true,

@@ -66,14 +66,7 @@ const Home = () => {
       <Section>
         <Features />
       </Section>
-      {/* <div className={classes.shape}>
-        <Section>
-          <Pricings data={pricings} />
-        </Section>
-        <Section className={classes.sectionNoPaddingTop}>
-          <Faq data={faq} />
-        </Section>
-      </div> */}
+    
     </div>
   );
 };

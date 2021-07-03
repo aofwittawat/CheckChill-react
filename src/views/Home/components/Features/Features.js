@@ -44,7 +44,7 @@ const Features = props => {
                     </Typography>
                   </span>
                 }
-                subtitle={<div>เราได้ทำการย่อยข้อมูล และรายละเอียดต่างๆ เกี่ยวกับการตรวจสุขภาพโดยสามารถอ่านเพิ่มได้</div>}
+                subtitle="เราได้ทำการย่อยข้อมูล และรายละเอียดต่างๆ เกี่ยวกับการตรวจสุขภาพโดยสามารถอ่านเพิ่มได้"
                 align="left"
                 fadeUp
                 disableGutter
@@ -55,7 +55,7 @@ const Features = props => {
                 <div>
                   <CountUpNumber
                     end={100}
-                    label={<div>แม่นยำ</div>}
+                    label="แม่นยำ"
                     textColor="primary"
                     suffix="%"
                   />
@@ -63,7 +63,7 @@ const Features = props => {
                 <div>
                   <CountUpNumber
                     end={24}
-                    label={<div>เช็คข้อมูล</div>}
+                    label="เช็คข้อมูล"
                     textColor="primary"
                     suffix="/7"
                   />
@@ -71,7 +71,7 @@ const Features = props => {
                 <div>
                   <CountUpNumber
                     end={20}
-                    label={<div>การตรวจร่างกาย</div>}
+                    label="การตรวจร่างกาย"
                     textColor="primary"
                     suffix="++"
                   />

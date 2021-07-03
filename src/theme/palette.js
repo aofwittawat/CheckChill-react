@@ -7,7 +7,7 @@ export const light = {
   "type": "light",
   "primary": {
     "main": "#388e3c",
-    "light": "#43a047)",
+    "light": "#43a047",
     "dark": "#1b5e20",
     "contrastText": "#fff"
   },

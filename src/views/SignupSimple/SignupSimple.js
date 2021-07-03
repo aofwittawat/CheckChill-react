@@ -30,8 +30,8 @@ const SignupSimple = () => {
       <Section className={classes.section}>
         <div className={classes.formContainer}>
           <SectionHeader
-            title={<div>สมัครสมาชิก</div>}
-            subtitle={<div>ไม่เสียค่าใช้จ่ายทั้งหมด <span style={{color:"#ef6c00", fontSize: 30}}>"ฟรี"</span></div>}
+            title="สมัครสมาชิก"
+            subtitle='ไม่เสียค่าใช้จ่ายทั้งหมด "ฟรี"'
             titleProps={{
               variant: 'h3',
             }}

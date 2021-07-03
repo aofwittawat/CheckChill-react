@@ -68,9 +68,6 @@ const Routes = () => {
           />
         )}
       />
-
-
-
       <Redirect to="/not-found-cover" />
     </Switch>
   );

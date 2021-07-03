@@ -37,7 +37,7 @@ const Users = props => {
             <Typography color="secondary" variant="inherit" component="span">เป็นตามหมวดหมู่</Typography>
           </span>
         }
-        subtitle={<div>คุณสามารถหาความรู้เพิ่มเติมตามอวัยวะต่างๆที่คุณสนใจตรวจ เพื่อเข้าถึงรายละเอียดของข้อมูลได้</div>}
+        subtitle="คุณสามารถหาความรู้เพิ่มเติมตามอวัยวะต่างๆที่คุณสนใจตรวจ เพื่อเข้าถึงรายละเอียดของข้อมูลได้"
         ctaGroup={[
           <Button color="primary" variant="contained" size="large">
             ความรู้เพิ่มเติม

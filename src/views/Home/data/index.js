@@ -1,21 +1,21 @@
 export const services = [
   {
     icon: 'fas fa-user-edit',
-    title: <div>การสมัครสมาชิก</div>,
+    title: 'การสมัครสมาชิก',
     subtitle:
-    <div style={{textAlign:"justify"}}>เป็นบริการที่ ฟรี โดยไม่มีค่าใช้จ่ายใดๆทั้งสิ้น โดยคุณสามารถติดตามการตรวจสุขภาพของคุณโดยไม่สูญหายแม้ตรวจคนละโรงพยาบาล</div>,
+      'เป็นบริการที่ ฟรี โดยไม่มีค่าใช้จ่ายใดๆทั้งสิ้น โดยคุณสามารถติดตามการตรวจสุขภาพของคุณโดยไม่สูญหายแม้ตรวจคนละโรงพยาบาล',
   },
   {
     icon: 'fas fa-mobile-alt',
-    title: <div>แจ้งเตือนทุกครั้งเมื่อใกล้วันตรวจสุภาพ</div>,
+    title: 'แจ้งเตือนทุกครั้งเมื่อใกล้วันตรวจสุภาพ',
     subtitle:
-    <div style={{textAlign:"justify"}}>มีบริการแจ้งเตือนผ่าน มือถือ เมื่อใกล้วันครบรอบตรวจสุขภาพประจำปี</div>,
+      'มีบริการแจ้งเตือนผ่าน มือถือ เมื่อใกล้วันครบรอบตรวจสุขภาพประจำปี',
   },
   {
     icon: 'fas fa-chart-area',
-    title: <div>มีการทำสถิติเปรียบเทียบ</div>,
+    title: 'มีการทำสถิติเปรียบเทียบ',
     subtitle:
-    <div style={{textAlign:"justify"}}>สามารถติดตามโดยมีการเปรียบเทียบ ผลของการรักษา ในแต่ละปี เพื่อวางแผนปรับเปลี่ยนการรักษาได้ง่าย</div>,
+      'สามารถติดตามโดยมีการเปรียบเทียบ ผลของการรักษา ในแต่ละปี เพื่อวางแผนปรับเปลี่ยนการรักษาได้ง่าย',
   },
 ];
 
@@ -47,10 +47,10 @@ export const partners = [
 ];
 
 export const props = [
-  <div>ข้อมูลถูกต้อง ทางการแพทย์</div>,
-  <div>ข้อมูลทันสมัย เหมาะสม</div>,
-  <div>เข้าถึงได้ง่าย ด้วยโทรศัพท์ของคุณ</div>,
-  <div>มีการแนะนำแต่ละการตรวจ</div>,
+  'ข้อมูลถูกต้อง ทางการแพทย์',
+  'ข้อมูลทันสมัย เหมาะสม',
+  'เข้าถึงได้ง่าย ด้วยโทรศัพท์ของคุณ',
+  'มีการแนะนำแต่ละการตรวจ',
 ];
 
 export const organs = [
@@ -182,18 +182,22 @@ export const faq = [
 export const reviews = [
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
     },
-    authorName: "วิทวัส บุญญานุวัตร",
+    authorName: 'วิทวัส บุญญานุวัตร',
     authorOccupation: 'Growth Marketer, Crealytics',
     feedback:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
     },
     authorName: 'อลีนา สรรค์ธีรภาพ',
     authorOccupation: 'Lead Generation, Alternative Capital',
@@ -202,8 +206,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
     },
     authorName: 'รัฐภูมิ สุวรรณรัตน์',
     authorOccupation: 'Head of Operations, Parkfield Commerce',
@@ -212,8 +218,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/veronica-adams@2x.jpg 2x',
     },
     authorName: 'เติมพงศ์ พ่อค้า',
     authorOccupation: 'Growth Marketer, Crealytics',
@@ -222,8 +230,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/akachi-luccini@2x.jpg 2x',
     },
     authorName: 'พูนสุข บุญญานุวัตร',
     authorOccupation: 'Lead Generation, Alternative Capital',
@@ -232,8 +242,10 @@ export const reviews = [
   },
   {
     authorPhoto: {
-      src: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
-      srcSet: 'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
+      src:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith.jpg',
+      srcSet:
+        'https://assets.maccarianagency.com/the-front/photos/people/jack-smith@2x.jpg 2x',
     },
     authorName: 'อาทมะ วิเชียรฉาย',
     authorOccupation: 'Head of Operations, Parkfield Commerce',

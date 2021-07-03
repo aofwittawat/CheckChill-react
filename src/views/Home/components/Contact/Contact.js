@@ -80,7 +80,7 @@ const Contact = props => {
                 <Grid item xs={12}>
                   <FKTextField
                     placeholder="Full Name"
-                    label={<div>ชื่อ-นามสกุล**</div>}
+                    label="ชื่อ-นามสกุล**"
                     size="medium"
                     name="fullname"
                     fullWidth
@@ -90,7 +90,7 @@ const Contact = props => {
                 <Grid item xs={12}>
                   <FKTextField
                     placeholder="Email"
-                    label={<div>อีเมลล์**</div>}
+                    label="อีเมลล์**"
                     size="medium"
                     name="email"
                     fullWidth
@@ -100,7 +100,7 @@ const Contact = props => {
                 <Grid item xs={12}>
                   <FKTextField
                     placeholder="phoneNumber"
-                    label={<div>เบอร์โทรศัพท์</div>}
+                    label="เบอร์โทรศัพท์"
                     size="medium"
                     name="phoneNumber"
                     fullWidth
@@ -156,7 +156,7 @@ const Contact = props => {
                   />
                 </>
               }
-              subtitle={<div style={{ textAlign: "justify" }}>การตรวจที่แนะนำทุกอย่าง ผ่านการคัดเลือกมาแล้ว จากหมอเฉพาะทางแต่ละสาขา โดยมีหลักฐานการอ้างอิงทางวิชาการที่ถูกต้อง ครบถ้วนสามารถตรวจสอบได้ และประหยัดเวลาไม่ต้องหาข้อมูลด้วยตนเอง</div>}
+              subtitle="การตรวจที่แนะนำทุกอย่าง ผ่านการคัดเลือกมาแล้ว จากหมอเฉพาะทางแต่ละสาขา โดยมีหลักฐานการอ้างอิงทางวิชาการที่ถูกต้อง ครบถ้วนสามารถตรวจสอบได้ และประหยัดเวลาไม่ต้องหาข้อมูลด้วยตนเอง"
               align="left"
               disableGutter
             />
