@@ -2,13 +2,15 @@ import React from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import WithLayout from 'WithLayout';
 import { Main as MainLayout, Minimal as MinimalLayout } from './layouts';
-import { 
-  Home as HomeView, 
+import {
+  Home as HomeView,
   SignupSimple as SignupSimpleView,
-  About as AboutView, 
+  About as AboutView,
   CheckboxRisk as CheckboxRiskView,
-  Result as Resultview
+  Resultview,
+  Result,
 } from './views';
+import mainResult from './views/Result/data/mainResult';
 
 const Routes = () => {
   return (
@@ -35,7 +37,7 @@ const Routes = () => {
           />
         )}
       />
-       <Route
+      <Route
         exact
         path="/checkboxrisk"
         render={matchProps => (
@@ -64,6 +66,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={Resultview}
+            layout={MinimalLayout}
+          />
+        )}
+      />
+      <Route
+        exact
+        path="/main"
+        render={matchProps => (
+          <WithLayout
+            {...matchProps}
+            component={mainResult}
             layout={MinimalLayout}
           />
         )}

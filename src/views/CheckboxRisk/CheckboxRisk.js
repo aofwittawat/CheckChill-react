@@ -15,8 +15,6 @@ import { Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 
-
-
 const useStyles = makeStyles(theme => ({
   formWrapper: {
     marginTop: theme.spacing(5),
@@ -80,7 +78,7 @@ const CheckboxRisk = () => {
               }}
               validationSchema={FORM_VALIDATION}
               onSubmit={values => {
-                console.log(values);
+                
                 dispatch({ type: 'ADD_RISK_PERSON', payload: values });
               }}
             >
@@ -148,7 +146,9 @@ const CheckboxRisk = () => {
                   ))}
                   <Grid item xs={6}></Grid>
                   <Grid item xs={6}>
-                    <Buttonwrapper>Submit Form</Buttonwrapper>
+                    <Link to="/result">
+                      <Buttonwrapper>Submit Form</Buttonwrapper>
+                    </Link>
                   </Grid>
 
                   <Grid item xs={6}>
