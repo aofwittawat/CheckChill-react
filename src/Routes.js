@@ -7,7 +7,9 @@ import {
   SignupSimple as SignupSimpleView,
   About as AboutView,
   CheckboxRiskMale as CheckboxRiskMaleView,
+  CheckboxRiskFemale as CheckboxRiskFemaleView,
   ResultMale as ResultMaleView,
+  ResultFemale as ResultFemaleView,
   GenderSelection as GenderSelectionView
 } from './views';
 
@@ -50,6 +52,17 @@ const Routes = () => {
       />
       <Route
         exact
+        path="/checkboxriskfemale"
+        render={matchProps => (
+          <WithLayout
+            {...matchProps}
+            component={CheckboxRiskFemaleView}
+            layout={MinimalLayout}
+          />
+        )}
+      />
+      <Route
+        exact
         path="/about"
         render={matchProps => (
           <WithLayout
@@ -77,6 +90,17 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={ResultMaleView}
+            layout={MinimalLayout}
+          />
+        )}
+      />
+      <Route
+        exact
+        path="/resultfemale"
+        render={matchProps => (
+          <WithLayout
+            {...matchProps}
+            component={ResultFemaleView}
             layout={MinimalLayout}
           />
         )}

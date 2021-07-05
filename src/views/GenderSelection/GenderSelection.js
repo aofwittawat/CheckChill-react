@@ -37,7 +37,7 @@ const GenderSelection = () => {
                 </Grid>
                 <Grid item md ={6} xs={12} style={{display:"flex", justifyContent:"space-evenly"}}>
                      <Avatar alt ="woman" src="./assets/woman.svg"style={{height:400, width: 400}}/>
-                     <Link to ="/"><Button variant="contained" color="secondary" style={{color:"white", fontSize:24}}>ผู้หญิง</Button></Link>
+                     <Link to ="/checkboxriskfemale"><Button variant="contained" color="secondary" style={{color:"white", fontSize:24}}>ผู้หญิง</Button></Link>
                 </Grid>
             </Grid>
            

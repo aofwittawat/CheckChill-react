@@ -25,23 +25,17 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-// const bmiCalculated = async (weight, height) => {
-//   const BMI = await (weight / (height * height)).toFixed(2)
-//   return BMI
-// }
-
-
-
-const ResultMale = () => {
-  const risksObj =  useSelector(store => store.riskReducerMale);
+const ResultFemale = () => {
+  const risksObj = useSelector(store => store.riskReducerFemale);
   const risks = risksObj.risksInfo;
   const lastestIndex = risks.length - 1;
   const lastestRisks = risks[lastestIndex];
   const weight = Number(lastestRisks.weight)
   const height = Number(lastestRisks.height / 100)
-  const BMI =  (weight / (height * height)).toFixed(2)
+  const BMI = (weight / (height * height)).toFixed(2)
   console.log("BMI:" + BMI);
   console.log(lastestRisks);
+
 
 
 
@@ -63,4 +57,4 @@ const ResultMale = () => {
   );
 };
 
-export default ResultMale;
+export default ResultFemale;

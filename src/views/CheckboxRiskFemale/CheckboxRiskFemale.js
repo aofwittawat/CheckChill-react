@@ -42,7 +42,9 @@ const INITIAL_FORM_STATE = {
   isStone: false,
   isMI: false,
   isCAColon: false,
-  isCAProstate: false,
+  isCABreast: false,
+  isCAOvary: false,
+  isCACervix: false,
   isCALiver: false,
   isCAPancreas: false,
   isCAOthers: false,
@@ -63,7 +65,7 @@ const FORM_VALIDATION = Yup.object().shape({
     .required('Required'),
 });
 
-const CheckboxRiskMale = () => {
+const CheckboxRiskFemale = () => {
   const dispatch = useDispatch();
 
   const classes = useStyles();
@@ -78,7 +80,7 @@ const CheckboxRiskMale = () => {
               }}
               validationSchema={FORM_VALIDATION}
               onSubmit={async (values) => {
-                await dispatch({ type: 'ADD_RISK_PERSON_MALE', payload: values });
+                await dispatch({ type: 'ADD_RISK_PERSON_FEMALE', payload: values });
               }}
             >
               <Form>
@@ -145,7 +147,7 @@ const CheckboxRiskMale = () => {
                   ))}
                   <Grid item xs={6}></Grid>
                   <Grid item xs={6}>
-                    <Link to="/resultmale">
+                    <Link to="/resultfemale">
                       <Buttonwrapper>Submit Form</Buttonwrapper>
                     </Link>
                   </Grid>
@@ -167,4 +169,4 @@ const CheckboxRiskMale = () => {
   );
 };
 
-export default CheckboxRiskMale;
+export default CheckboxRiskFemale;

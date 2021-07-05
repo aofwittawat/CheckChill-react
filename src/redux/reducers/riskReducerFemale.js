@@ -4,9 +4,9 @@ const initailData = {
 }
 
 
-const riskReducer = (state=initailData, action) => {
+const riskReducerFemale = (state=initailData, action) => {
    switch(action.type){
-        case 'ADD_RISK_PERSON':
+        case 'ADD_RISK_PERSON_FEMALE':
            return {
                ...state,
                risksInfo: [...state.risksInfo, action.payload]
@@ -15,4 +15,4 @@ const riskReducer = (state=initailData, action) => {
    }
 }
 
-export default riskReducer
+export default riskReducerFemale

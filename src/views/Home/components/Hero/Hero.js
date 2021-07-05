@@ -38,7 +38,7 @@ const Hero = props => {
             }
             subtitle="คุณสามารถเลือกเองได้โดยใช้โปรแกรมของเราช่วยคุณให้การเลือกทุกครั้งเป็นการเลือกที่เหมาะสมกับตัวของคุณจริงๆ"
             ctaGroup={[
-              <Link to="/checkboxrisk">
+              <Link to="/genderSelection">
               <Button variant="contained" color="primary" size="large">
                 เริ่มการตรวจ
               </Button>

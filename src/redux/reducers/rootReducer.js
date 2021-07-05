@@ -1,8 +1,10 @@
 import {combineReducers} from 'redux'
-import riskReducer from './riskReducer'
+import riskReducerMale from './riskReducerMale'
+import riskReducerFemale from './riskReducerFemale'
 
 const rootReducer = combineReducers({
-    riskReducer
+    riskReducerMale,
+    riskReducerFemale
 })
 
 export default rootReducer

@@ -4,5 +4,7 @@ export { default as About } from './About';
 export { default as NotFound } from './NotFound';
 export { default as NotFoundCover } from './NotFoundCover';
 export { default as CheckboxRiskMale } from './CheckboxRiskMale';
+export { default as CheckboxRiskFemale } from './CheckboxRiskFemale';
 export { default as ResultMale } from './ResultMale';
+export { default as ResultFemale } from './ResultFemale';
 export { default as GenderSelection } from './GenderSelection';

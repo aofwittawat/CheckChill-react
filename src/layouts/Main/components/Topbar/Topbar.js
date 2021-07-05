@@ -242,7 +242,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
   };
 
   return (
-    <Toolbar disableGutters className={classes.toolbar} {...rest}>
+    <Toolbar disableGutters className={classes.toolbar} {...rest} >
       <div className={classes.logoContainer}>
         <a href="/" title="thefront">
           <Image

@@ -42,8 +42,8 @@ const Users = props => {
           <Button color="primary" variant="contained" size="large">
             ความรู้เพิ่มเติม
           </Button>,
-          <Link to='/checkboxrisk'>
-          <Button color="secondary" variant="outlined" size="large">
+          <Link to='/genderSelection'>
+        <Button color="secondary" variant="outlined" size="large">
             เริ่มตรวจ
           </Button>
           </Link>,

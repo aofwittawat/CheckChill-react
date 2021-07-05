@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
-import { useMediaQuery, Divider } from '@material-ui/core';
+import { useMediaQuery, Divider, AppBar } from '@material-ui/core';
 import { Topbar, Footer, Sidebar } from './components';
 
 const useStyles = makeStyles(theme => ({
@@ -122,15 +122,15 @@ const Main = ({ children, themeToggler, themeMode }) => {
           pages: [
             {
               title: 'Lising',
-              href: '/career-listing',
+              href: '',
             },
             {
               title: 'Lising Minimal',
-              href: '/career-listing-minimal',
+              href: '',
             },
             {
               title: 'Opening',
-              href: '/career-opening',
+              href: '',
             },
           ],
         },
@@ -328,14 +328,16 @@ const Main = ({ children, themeToggler, themeMode }) => {
         [classes.root]: true,
       })}
     >
-      <Topbar onSidebarOpen={handleSidebarOpen} pages={pages} themeMode={themeMode} themeToggler={themeToggler} />
+      <AppBar style={{backgroundColor:"white"}}>
+      <Topbar onSidebarOpen={handleSidebarOpen} pages={pages} themeMode={themeMode} themeToggler={themeToggler}  />
+      </AppBar>
       <Sidebar
         onClose={handleSidebarClose}
         open={open}
         variant="temporary"
         pages={pages}
       />
-      <main>
+      <main style={{marginTop:60}}>
         <Divider />
         {children}
       </main>
