@@ -68,7 +68,7 @@ const useStyles = makeStyles(theme => ({
 }));
 
 const Vertical = props => {
-  const { className, risks, bmi, ...rest } = props;
+  const { className, risks, ...rest } = props;
   const classes = useStyles();
   
   const theme = useTheme();
@@ -91,7 +91,7 @@ const Vertical = props => {
     />
   );
 
-  const BlogContent1 = ({bmi}) => (
+  const BlogContent1 = ({risks}) => (
     <div className={classes.blogContent} >
       <div className={classes.list}>
         <div className={classes.avatarContainer}>
@@ -105,7 +105,7 @@ const Vertical = props => {
         การตรวจโรคทั่วไปตามอายุ
       </Typography>
       <Typography variant="subtitle1" color="secondary" >
-        ค่าดัชนีมวลกายเท่ากับ {bmi} กิโลกรัมต่อตารางเมตร
+        ค่าดัชนีมวลกายเท่ากับ {risks.bmi} กิโลกรัมต่อตารางเมตร
       </Typography>
       <Typography variant="subtitle1" color="textPrimary" >
         ตรวจความสมบูรณ์ของเม็ดเลือด (CBC)
@@ -126,7 +126,7 @@ const Vertical = props => {
       <div style={{ flexGrow: 1 }} />
     </div>
   );
-  const BlogContent2 = ({ risks, bmi }) => (
+  const BlogContent2 = ({ risks }) => (
     <div className={classes.blogContent} >
       <div className={classes.list}>
         <div className={classes.avatarContainer}>
@@ -220,7 +220,7 @@ const Vertical = props => {
       {risks.isRenalFailure && <Typography variant="subtitle1" color="secondary" >
         ฉีดวัคซีนไข้หวัดใหญ่ทุกปี
       </Typography>}
-      {(bmi >= 30) && <Typography variant="subtitle1" color="secondary" >
+      {(risks.bmi >= 30) && <Typography variant="subtitle1" color="secondary" >
         มีโอกาสไขมันเกาะตับจากโรคอ้วน ควรตรวจ Liver Fibroscan
       </Typography>}
 
@@ -238,7 +238,7 @@ const Vertical = props => {
             liftUp
             className={classes.cardProduct}
             mediaContent={<BlogMediaContent1 />}
-            cardContent={<BlogContent1 bmi ={bmi}/>}
+            cardContent={<BlogContent1 risks={risks}/>}
           />
         </Grid>
         <Grid item xs={12} md={7} data-aos="fade-up">
@@ -247,7 +247,7 @@ const Vertical = props => {
             liftUp
             className={classes.cardProduct}
             mediaContent={<BlogMediaContent2 />}
-            cardContent={<BlogContent2 risks={risks} bmi ={bmi} />}
+            cardContent={<BlogContent2 risks={risks}  />}
           />
         </Grid>
 

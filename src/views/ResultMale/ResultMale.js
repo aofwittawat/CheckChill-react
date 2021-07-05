@@ -2,13 +2,9 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Button } from '@material-ui/core';
 import { Section, SectionAlternate } from 'components/organisms';
-import {
-  Hero,
-  Vertical,
-} from './components';
-import { useSelector } from 'react-redux'
+import { Hero, Vertical } from './components';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,21 +26,11 @@ const useStyles = makeStyles(theme => ({
 //   return BMI
 // }
 
-
-
 const ResultMale = () => {
-  const risksObj =  useSelector(store => store.riskReducerMale);
+  const risksObj = useSelector(store => store.riskReducerMale);
   const risks = risksObj.risksInfo;
   const lastestIndex = risks.length - 1;
   const lastestRisks = risks[lastestIndex];
-  const weight = Number(lastestRisks.weight)
-  const height = Number(lastestRisks.height / 100)
-  const BMI =  (weight / (height * height)).toFixed(2)
-  console.log("BMI:" + BMI);
-  console.log(lastestRisks);
-
-
-
 
   const classes = useStyles();
 
@@ -54,10 +40,25 @@ const ResultMale = () => {
         <Hero />
       </Section>
       <SectionAlternate>
-        <Vertical risks={lastestRisks} bmi={BMI} />
+        <Vertical risks={lastestRisks} />
         <Link to="/">
-          <Button variant="contained" color="primary" fullWidth style={{ marginTop: 20 }}>BACK HOME</Button>
+          <Button
+            variant="contained"
+            color="primary"
+            fullWidth
+            style={{ marginTop: 20 }}
+          >
+            BACK HOME
+          </Button>
         </Link>
+        <Button
+            variant="contained"
+            color="secondary"
+            fullWidth
+            style={{ marginTop: 20, color:"white" }}
+          >
+            PRINT
+          </Button>
       </SectionAlternate>
     </div>
   );

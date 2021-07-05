@@ -78,7 +78,12 @@ const CheckboxRiskMale = () => {
               }}
               validationSchema={FORM_VALIDATION}
               onSubmit={async (values) => {
-                await dispatch({ type: 'ADD_RISK_PERSON_MALE', payload: values });
+                const weight = values.weight
+                const height = values.height
+                let bmi = (weight / ((height/100)*(height/100))).toFixed(2)
+                const newValues = {...values, bmi}
+                console.log(newValues)
+                await dispatch({ type: 'ADD_RISK_PERSON_MALE', payload: newValues });
               }}
             >
               <Form>

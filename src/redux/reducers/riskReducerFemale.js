@@ -1,6 +1,33 @@
 /* eslint-disable default-case */
 const initailData = {
-    risksInfo:[]
+    risksInfo:[
+        {age: '',
+        weight: '',
+        height: '',
+        isSmoking: false,
+        isDrinking: false,
+        isVacineHepB: false,
+        isExposure: false,
+        isRenalFailure: false,
+        isDM: false,
+        isHT: false,
+        isDLP: false,
+        isHepatitis: false,
+        isPancreaitis: false,
+        isColitis: false,
+        isOsteoporosis: false,
+        isAsthma: false,
+        isStone: false,
+        isMI: false,
+        isCAColon: false,
+        isCABreast: false,
+        isCAOvary: false,
+        isCACervix: false,
+        isCALiver: false,
+        isCAPancreas: false,
+        isCAOthers: false,
+        bmi:'',}
+    ]
 }
 
 
