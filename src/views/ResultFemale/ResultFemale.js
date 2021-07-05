@@ -25,16 +25,22 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
+
 const ResultFemale = () => {
   const risksObj = useSelector(store => store.riskReducerFemale);
   const risks = risksObj.risksInfo;
   const lastestIndex = risks.length - 1;
   const lastestRisks = risks[lastestIndex];
-  const weight = Number(lastestRisks.weight)
-  const height = Number(lastestRisks.height / 100)
-  const BMI = (weight / (height * height)).toFixed(2)
-  console.log("BMI:" + BMI);
-  console.log(lastestRisks);
+  // const weight = lastestRisks.weight
+  // const height = lastestRisks.height / 100
+  
+  // const bmiCal = (weight,height) => {
+  //   const BMI = (weight / (height * height)).toFixed(2)
+  //   return BMI
+  // }
+  // const BMI = bmiCal(weight,height)
+  // console.log("BMI:" + BMI);
+  // console.log(lastestRisks);
 
 
 
@@ -48,7 +54,7 @@ const ResultFemale = () => {
         <Hero />
       </Section>
       <SectionAlternate>
-        <Vertical risks={lastestRisks} bmi={BMI} />
+        <Vertical risks={lastestRisks}  />
         <Link to="/">
           <Button variant="contained" color="primary" fullWidth style={{ marginTop: 20 }}>BACK HOME</Button>
         </Link>
