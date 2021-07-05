@@ -6,11 +6,11 @@ import {
   Home as HomeView,
   SignupSimple as SignupSimpleView,
   About as AboutView,
-  CheckboxRisk as CheckboxRiskView,
-  Resultview,
-  Result,
+  CheckboxRiskMale as CheckboxRiskMaleView,
+  ResultMale as ResultMaleView,
+  GenderSelection as GenderSelectionView
 } from './views';
-import mainResult from './views/Result/data/mainResult';
+
 
 const Routes = () => {
   return (
@@ -39,11 +39,11 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/checkboxrisk"
+        path="/checkboxriskmale"
         render={matchProps => (
           <WithLayout
             {...matchProps}
-            component={CheckboxRiskView}
+            component={CheckboxRiskMaleView}
             layout={MinimalLayout}
           />
         )}
@@ -61,26 +61,27 @@ const Routes = () => {
       />
       <Route
         exact
-        path="/result"
+        path="/genderselection"
         render={matchProps => (
           <WithLayout
             {...matchProps}
-            component={Resultview}
+            component={GenderSelectionView}
             layout={MinimalLayout}
           />
         )}
       />
       <Route
         exact
-        path="/main"
+        path="/resultmale"
         render={matchProps => (
           <WithLayout
             {...matchProps}
-            component={mainResult}
+            component={ResultMaleView}
             layout={MinimalLayout}
           />
         )}
       />
+  
       <Redirect to="/not-found-cover" />
     </Switch>
   );

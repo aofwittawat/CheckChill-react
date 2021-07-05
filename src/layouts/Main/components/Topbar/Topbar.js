@@ -313,7 +313,7 @@ const Topbar = ({ themeMode, themeToggler, onSidebarOpen, pages, className, ...r
             </Link>
           </ListItem>
           <ListItem className={clsx(classes.listItem, 'menu-item--no-dropdown')}>
-          <Link to="/checkboxrisk">
+          <Link to="/genderselection">
             <Button
               variant="contained"
               color="primary"
